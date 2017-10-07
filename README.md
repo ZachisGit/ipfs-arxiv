@@ -58,13 +58,13 @@ These two lines are for writing the retrived entries to the index.json file that
 <br/>
 <b>2. The website</b>
 <br/><br/>
-In the next step we take a look at the website code. The whole site consists of three files and a folder containing all the pdfs; lets first look at index.html it contains all the html and css code of the site plus it loads the javascripts (jquery for no reason, index.json and ipfs_arxiv.js). I wanted to use jquery to load the index.json file into the website so the javascript code could access it, but that didn't work out in chrome because of it's cross-domain protection so I had to get a little creative. I put "var index_json = [index.json content];" around the previously created entry index and loaded it like this
+In the next step we take a look at the website code. The whole site consists of three files and a folder containing all the pdfs; lets first look at index.html it contains all the html and css code of the site plus it loads the javascripts (jquery for no reason, index.json and ipfs_arxiv.js). I wanted to use jquery to load the index.json file into the website so the javascript code could access it, but that didn't work out in chrome because of it's cross-domain protection so I had to get a little creative. I put "var index_json = [index.json content];" around the previously created entry index and loaded it like this:
 
 ```
 <script src='index.json'></script>
 <script type='text/javascript' src='ipfs_arxiv.js'></script>
 ```
-now that index.json is loaded as a javascript we can just access the index_json variable containing the entire index table as a list of dictionaries. And the second line loads the main js script.
+Now that index.json is loaded as a javascript we can just access the index_json variable containing the entire index table as a list of dictionaries. And the second line loads the main js script.
 <br/>
 ipfs_arxiv.js contains all the javascript code for displaying and managing pages (next/prev and what page we are currently on etc.) and based on the page_index it adds the appropriate entries from index_json to the main display section.
 <br/>
