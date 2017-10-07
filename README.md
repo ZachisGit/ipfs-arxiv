@@ -20,7 +20,7 @@ The webscraper uses the arxiv API to send a search query in this format:<br/>
 ```
 http://export.arxiv.org/api/query?search_query=[query]&start=[start_index]&max_results=[result_count]
 ```
-the query is in the machine learning case "machine%20learning", start_index is a zero based offset index from which paper to start and result_count the amount of results that should be returned.
+The query is in the machine learning case "machine%20learning", start_index is a zero based offset index from which paper to start and result_count the amount of results that should be returned.
 
 API results are in xml format so the next step is to parse them and add the new titles,ids and summaries (these is all the tags we are using) to the index.json file. There we save all the information but not without checking for doubles so no redundant entries are being written to the index after a potential restart. Then all pdfs of the non redundant entries are downloaded and saved to the "pdfs/" folder.
 PDF request url:<br/>
