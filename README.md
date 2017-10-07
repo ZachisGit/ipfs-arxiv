@@ -52,6 +52,7 @@ entries = write_entries_to_index(entries,index_file='index.json')
 download_pdfs(entries,folder='pdfs')
 ```
 These two lines are for writing the retrived entries to the index.json file that contains all the entry information we are interested in and download_pdfs downloads the pdfs if they exist from all the entries to the "pdfs/" folder.
+
 <br/>
 <br/>
 <b>2. The website</b>
@@ -107,7 +108,6 @@ http://127.0.0.1:8080/ipfs/QmVxheJqLSqJ4VTw2LYwe3UbDYLYhq1RWb3ie43yGYTr8y
 ```
 
 <br/>
-<br/>
 Congrats you did it :)
 <br/>
 But if you want to make changes to your site in the future and don't want to give every one that wants to access your site a new hash every time you do there is one last step. Essentially we publish the site hash under our peerID so that the id resolves to our site hash
@@ -123,6 +123,5 @@ the first line connects the site hash to your peerID, the second one is to check
 https://gateway.ipfs.io/ipns/QmVxheJqLSqJ4VTw2LYwe3UbDYLYhq1RWb3ie43yGYTr8y
 http://127.0.0.1:8080/ipns/QmVxheJqLSqJ4VTw2LYwe3UbDYLYhq1RWb3ie43yGYTr8y
 ```
-<br/>
 <br/>
 Thats it!
