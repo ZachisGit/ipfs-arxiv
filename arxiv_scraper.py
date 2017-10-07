@@ -69,7 +69,7 @@ def download_pdfs(entries,folder='pdfs'):
             print '[PDF-Download-Error: id='+e['id']+' could not be downloaded!]'
             continue
 
-for i in range(1000,2000,100):
+for i in range(0,1000,100):
     print 'Retriving entries [',i,'/',i+100,']'
     raw = get_arxiv(i,length=100)
     print 'Extracting xml entries...'
