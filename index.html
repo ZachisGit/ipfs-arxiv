@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IPSF-Arxiv Machine Learning</title>
+	<style>
+		body{
+			text-align:center;
+			margin: 10 auto;
+
+			font-family: 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+		}
+
+		#header{
+			background: #b31b1b;
+			margin-top: 0;
+			margin-left:0;
+			margin-right:0;
+			margin-bottom:8px;
+			padding: 8px;
+			color: white;
+			position:absolute;
+			overflow:hidden;
+			width:100%;
+			top:0;
+			left:0;
+		}
+
+		#footer{
+			bottom:0;
+			text-align:center;
+			background: #dddddd;
+			left:0;
+			overflow:hidden;
+			width:100%;
+			
+		}
+
+		#main {
+			margin-top:144px;
+		}
+
+		.entry{
+			padding-left: 32px;
+			padding-right: 32px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			border-width: 4px;
+			border-style: solid;
+			border-color: #dddddd;
+			border-bottom:0;
+		}
+	</style>
+	<script type='text/javascript' src='jquery-3.2.1.min.js'></script>
+	<script src='index.json'></script>
+	<script type='text/javascript' src='ipfs_arxiv.js'></script>
+</head>
+<body>
+
+<div id='header'>
+	<h1>IPFS-Arxiv</h1>
+	<h3> Machine-Learning</h3>
+</div>
+
+<div id='main'>
+	<div id='base_entry' class='entry'>
+		<table style='width:100%;'>
+			<tr>
+				<td style='width: 80%; text-align:left;'>
+					<h3 class='entry_title'>Entry Title Up here, can be longer.</h3>
+					<p class='entry_summary'>  The article is devoted to the problem of small learning samples in machine
+learning. The flaws of maximum likelihood learning and minimax learning are
+looked into and the concept of minimax deviation learning is introduced that is
+free of those flaws.</p>
+				</td>
+				<td style='width: 20%; text-align:right;'>
+					<p><b><span class='entry_id'>1707.04849v1</span></b></p>
+					<a href='#' class='entry_download'>Download here</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div id='footer'>
+	<table id='page_contdol' style='width:100%;'>
+	<tr>
+		<td style='width:50%;text-align:right;'>
+			<form action="index.html" method="get">
+				Page-Number: <input type='entdy' name='page' style="width: 64px;">
+				<input type='submit' value='Go'>
+			</form>
+		</td>
+		<td style='width:15%;text-align:left;padding-left: 32px;'>
+			<p><b>Page: <span id='page_idx'></span> of <span id='page_total'></span></b></p>
+		</td>
+		<td style='width:35%;text-align:left;padding-left: 32px;'>
+			<button onclick="prev_page();">Prev</button>
+			<button onclick="next_page();">Next</button>
+		</td>
+	</tr>
+	</div>
+</div>
+
+</body>
+</html>
