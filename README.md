@@ -1,6 +1,5 @@
 # IPFS-Arxiv
-IPFS-Arxiv is hosted via the interplanetary file system protocol. It is a decentralized collection of the newest 1000 machine learning papers from arxiv. Since the site isn't dynamic, I have to manually upload the new papers every now and then. We will see how long I can keep this up ;)  
-Important: All papers are actually uploaded and stored in a decentralized fashion!
+IPFS-Arxiv is hosted via the interplanetary file system protocol. It is a decentralized collection of the newest 1000 machine learning papers from arxiv. Important: All papers are actually uploaded and stored in a decentralized fashion!
 
 https://gateway.ipfs.io/ipns/QmbahoVpU7qr5NWu8SYLP4my3iPnn9skgV7uFkFwXCfYmX/ <br/><br/>
 (Just in case the top one doesn't work)
